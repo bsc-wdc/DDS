@@ -45,24 +45,24 @@ If you have questions or issues about the DDS you can join us in `Slack <https:/
 
 Alternatively, you can send us an e-mail to `support-compss@bsc.es <mailto:support-compss@bsc.es>`_.
 
-Citing DDS
-----------
+.. Citing DDS
+.. ----------
 
-If you use DDS in a scientific publication, we would appreciate citations to the following paper:
+.. If you use DDS in a scientific publication, we would appreciate citations to the following paper:
 
 
-Bibtex
-......
+.. Bibtex
+.. ......
 
-.. code:: latex
+.. .. code:: latex
 
-   @inproceedings{DDS,
-               title       = {{DDS}},
-               author      = {},
-               booktitle   = {Proceedings of the _____},
-               pages       = {1-6},
-               year        = {2025},
-    }
+..    @inproceedings{DDS,
+..                title       = {{DDS}},
+..                author      = {},
+..                booktitle   = {Proceedings of the _____},
+..                pages       = {1-6},
+..                year        = {2025},
+..     }
 
 
 Indices and tables

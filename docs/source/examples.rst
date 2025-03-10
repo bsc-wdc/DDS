@@ -5,4 +5,7 @@ Examples
    :maxdepth: 2
    :caption: Contents:
 
-   notebooks/DDS_Notebook
+   notebooks/inverted_indexing
+   notebooks/pi_estimation
+   notebooks/terasort
+   notebooks/transitive_closure

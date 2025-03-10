@@ -26,7 +26,7 @@ An example is as follows:
 
 
 It is worth noting that, although the code above looks completely sequential,
-all DDS operations are paralellized using `PyCOMPSs
+all DDS operations are parallelized using `PyCOMPSs
 <https://www.bsc.es/research-and-development/software-and-apps/software-list/comp-superscalar/>`_.
 
 How to run DDS
