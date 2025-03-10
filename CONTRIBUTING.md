@@ -17,7 +17,7 @@ GitHub, clone, and develop on a branch. Steps:
 
    ```bash
    git clone git@github.com:YourLogin/dds.git
-   cd DDS
+   cd dds
    ```
 
 3. Create a ``feature`` branch to hold your development changes:
@@ -60,7 +60,7 @@ following rules before you submit a pull request:
 
   ```bash
   cd scripts
-  ./run_tests.sh # it may ask your password to start the ssh daemon
+  ./run_tests.sh
   cd ..
   ```
 
@@ -70,7 +70,7 @@ following rules before you submit a pull request:
   ```bash
   python3 -m pip install coverage
   cd scripts
-  ./run_coverage.sh # it may ask your password to start the ssh daemon
+  ./run_coverage.sh
   cd ..
   ```
 

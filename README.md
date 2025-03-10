@@ -29,6 +29,7 @@
 
 
  **Table of content:**
+
 - [Description](#description)
 - [Requirements](#requirements)
 - [Installation](#installation)
@@ -49,7 +50,7 @@ processes the data in the most adequate way in terms of parallelism.
 ## Requirements
 
 - `Python` >= 3.6
-- `PyCOMPSs` >= 3.3
+- `pycompss` >= 3.3
 
 ## Installation
 

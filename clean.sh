@@ -33,4 +33,5 @@ rm -f "${SCRIPT_DIR}/.coverage"
 rm -f "${SCRIPT_DIR}/scripts/output.log"
 rm -f "${SCRIPT_DIR}/test.file"
 rm -f "${SCRIPT_DIR}/test.txt"
+rm -rf "${SCRIPT_DIR}/wordcount_dataset"
 

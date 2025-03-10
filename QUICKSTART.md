@@ -1,7 +1,7 @@
 # Quickstart guide
 
 There are two ways in which you can get started with DDS. You can perform
-a manual installation, or you can download our ready-to-use docker image.
+a manual installation, or you can use the docker image.
 
 ## Manual installation
 

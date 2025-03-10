@@ -27,5 +27,5 @@ class DDSTest(BaseTimedTestCase):
     def test_random(self):
         from dds import DDS
 
-        # Do something to check that retrieves a valid random circuit
+        # Do something to check that retrieves a random DDS.
         self.assertTrue(True)

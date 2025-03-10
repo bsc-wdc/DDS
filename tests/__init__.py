@@ -17,7 +17,7 @@
 
 # -*- coding: utf-8 -*-
 
-"""Main Quantum Distributed Library Tests."""
+"""Main Distributed Data Set Tests."""
 
 from time import time
 import unittest
