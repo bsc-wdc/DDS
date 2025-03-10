@@ -188,7 +188,7 @@ html_sidebars = {
     ]
 }
 
-html_logo = '../bsc_logo.png'
+html_logo = '../dds_logo.png'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the

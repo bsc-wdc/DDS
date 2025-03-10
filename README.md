@@ -35,9 +35,6 @@
 - [The Most Useful Methods](#the-most-useful-methods)
 - [Examples](#examples)
 - [Availability](#availability)
-- [Citing DDS](#citing-dds)
-  - [Bibtex:](#bibtex)
-- [URLs](#urls)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 
@@ -51,15 +48,19 @@ processes the data in the most adequate way in terms of parallelism.
 
 ## Requirements
 
-- Python >= 3.6
-- PyCOMPSs >= 3.3
+- `Python` >= 3.6
+- `PyCOMPSs` >= 3.3
 
 ## Installation
 
-[TBD]
+This package can be installed:
+
+- From source: `./install.sh`
+- From Pypi: `python3 -m pip install dds`
 
 ## The Most Useful Methods
-```
+
+```text
 map
 filter
 reduce
@@ -77,11 +78,9 @@ collect_as_dict
 
 Please feel free to suggest more methods!
 
-
 ## Examples
 
-Please see 'examples' folder.
-
+Please see `examples` or `notebooks` folders.
 
 ## Availability
 
@@ -89,11 +88,7 @@ Currently, the following supercomputers have already PyCOMPSs and DDS installed 
 
 - Marenostrum 5 - Barcelona Supercomputing Center (BSC)
 
-Supported architectures:
-- [IBM's Power 9](https://www.ibm.com/it-infrastructure/power/power9-b)
-
-
-## Citing DDS
+<!-- ## Citing DDS
 
 If you use DDS in a scientific publication, we would appreciate you citing the following paper:
 
@@ -109,19 +104,16 @@ If you use DDS in a scientific publication, we would appreciate you citing the f
                pages       = {1-2},
                year        = {2025},
  }
-```
+``` -->
 
 
-## URLs
+<!-- ## URLs
 
-[TBD]
-
+[TBD] -->
 
 ## Acknowledgements
 
-This work has received funding from the European Commission's through the following R&D projects:
-
-* [TBD]
+This work has received funding from the European Commission's through the Horizon Europe CyclOps project (Contract 101135513)
 
 ## License
 

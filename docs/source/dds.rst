@@ -12,10 +12,10 @@ Subpackages
 Submodules
 ----------
 
-dds.dds module
+dds.api module
 --------------
 
-.. automodule:: dds.dds
+.. automodule:: dds.api
    :members:
    :undoc-members:
    :show-inheritance:
