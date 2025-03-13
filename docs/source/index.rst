@@ -7,11 +7,13 @@
 Welcome to DDS!
 ===============
 
-The Quantum Distributed Computing Library (DDS) provides distributed
-Quantum algorithms ready to use as a library.
-So far, DDS is highly focused on Quantum circuit execution in High Performance Computers (HPCs) and Quantum Machines.
-However, other types of Quantum algorithms might be added in the future.
-The main objective of DDS is to facilitate the execution of large Quantum circuits in distributed platforms, such as clusters, clouds, and supercomputers.
+Distributed Data Set (DDS) is a lightweight library to ease development of
+PyCOMPSs applications.
+It provides an interface (inspired by PySpark) where programmers can load data
+from basic Python data structures, generators, or files, distribute the data
+on available nodes, and run some most common big data operations on it.
+By using DDS, number of code lines can be reduced, where performance
+improvement is not expected comparing with regular PyCOMPSs applications.
 
 DDS has been implemented on top of
 `PyCOMPSs <https://www.bsc.es/research-and-development/software-and-apps/software-list/comp-superscalar/>`_ programming model,
@@ -23,7 +25,6 @@ group of the `Barcelona Supercomputing Center <http://www.bsc.es>`_.
    :maxdepth: 2
    :caption: Contents:
 
-   main
    quickstart
    user_guide
    examples

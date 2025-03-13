@@ -3,75 +3,78 @@ Developer's guide
 
 Contributing
 ------------
+
 See the `Contributing Guide <https://github.com/bsc-wdc/dds/blob/master/CONTRIBUTING.md>`_.
 
 
-Drafting new releases
----------------------
+.. Release process:
 
-Follow these steps when drafting a new release:
+    Drafting new releases
+    ---------------------
 
-1. Ensure that the master branch is passing the tests and that the
-   `latest version of the documentation <https://dds.bsc.es/en/latest>`_
-   is properly being built.
+    Follow these steps when drafting a new release:
 
-2. Decide whether to issue a minor or a major release following this
-   `guide <https://semver.org/>`_.
+    1. Ensure that the master branch is passing the tests and that the
+       `latest version of the documentation <https://dds.bsc.es/en/latest>`_
+       is properly being built.
 
-3. Create and switch to a new branch named ``release-X.Y``.
+    2. Decide whether to issue a minor or a major release following this
+       `guide <https://semver.org/>`_.
 
-4. Update the release number accordingly in the
-   `VERSION <https://github.com/bsc-wdc/dds/blob/master/VERSION>`_
-   file.
+    3. Create and switch to a new branch named ``release-X.Y``.
 
-5. Update the required PyCOMPSs version in the
-   `quickstart guide <https://github.com/bsc-wdc/dds/blob/master/QUICKSTART.md>`_
-   if necessary.
+    4. Update the release number accordingly in the
+       `VERSION <https://github.com/bsc-wdc/dds/blob/master/VERSION>`_
+       file.
 
-6. Update the
-   `change log <https://github.com/bsc-wdc/dds/blob/master/CHANGELOG.md>`_.
+    5. Update the required PyCOMPSs version in the
+       `quickstart guide <https://github.com/bsc-wdc/dds/blob/master/QUICKSTART.md>`_
+       if necessary.
 
-7. Push the release branch with the changes.
+    6. Update the
+       `change log <https://github.com/bsc-wdc/dds/blob/master/CHANGELOG.md>`_.
 
-8. Merge the newly created branch to the master branch.
+    7. Push the release branch with the changes.
 
-9. Draft a new release in
-   `Github <https://github.com/bsc-wdc/dds/releases>`_ using this
-   `template <https://github.com/bsc-wdc/dds/blob/master/.github/RELEASE_TEMPLATE.md>`_
-   using tag name ``vX.Y.Z``.
+    8. Merge the newly created branch to the master branch.
 
-10. Create and tag a docker image for the release running the following at the
-    repo's root:
+    9. Draft a new release in
+       `Github <https://github.com/bsc-wdc/dds/releases>`_ using this
+       `template <https://github.com/bsc-wdc/dds/blob/master/.github/RELEASE_TEMPLATE.md>`_
+       using tag name ``vX.Y.Z``.
 
-    - Create the image:
+    10. Create and tag a docker image for the release running the following at the
+        repo's root:
 
-      .. code:: bash
+        - Create the image:
 
-       docker build -t bscwdc/dds:vX.Y.Z .
+          .. code:: bash
 
-       # Create also new 'latest' tag using newly created image
-       docker tag bscwdc/dds:vX.Y.Z bscwdc/dds:latest
+           docker build -t bscwdc/dds:vX.Y.Z .
 
-    - Log in and push it to dockerhub
+           # Create also new 'latest' tag using newly created image
+           docker tag bscwdc/dds:vX.Y.Z bscwdc/dds:latest
 
-      .. code:: bash
+        - Log in and push it to dockerhub
 
-       docker login -u DOCKERHUB_USER -p DOCKERHUB_PASSWORD
-       docker push bscwdc/dds:vX.Y.Z
-       docker push bscwdc/dds:latest
+          .. code:: bash
 
-11. Create a pip package and upload it to PyPi:
+           docker login -u DOCKERHUB_USER -p DOCKERHUB_PASSWORD
+           docker push bscwdc/dds:vX.Y.Z
+           docker push bscwdc/dds:latest
 
-    - Ensure that you have the latest version of ``setuptools``,
-      ``wheel``, and ``twine`` installed:
+    11. Create a pip package and upload it to PyPi:
 
-      .. code:: bash
+        - Ensure that you have the latest version of ``setuptools``,
+          ``wheel``, and ``twine`` installed:
 
-        pip3 install --upgrade setuptools wheel twine
+          .. code:: bash
 
-    - Create and upload the pip package:
+            pip3 install --upgrade setuptools wheel twine
 
-      .. code:: bash
+        - Create and upload the pip package:
 
-       ./build.sh
-       python3 -m twine upload dist/dds-X.Y.Z*
+          .. code:: bash
+
+           ./build.sh
+           python3 -m twine upload dist/dds-X.Y.Z*
